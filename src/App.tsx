@@ -6,6 +6,11 @@ import {Route} from 'react-router-dom';
 import Layout from "./models/Layout";
 import Home from "./models/Home";
 import Unions from "./models/Unions";
+import NormalFunction from "./models/NormalFunction";
+import InputField from "./models/InputField";
+import Checkbox from "./models/Checkbox";
+import RadioButton_and_Dropdown from "./models/RadioButton_and_Dropdown";
+import MapFunction from "./models/MapFunction";
 
 function App() {
   const router = createBrowserRouter(
@@ -15,6 +20,11 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="button" element={<Button />} />
         <Route path="union" element={<Unions />} />
+        <Route path="normalFunction" element={<NormalFunction />} />
+        <Route path="inputField" element={<InputField />} />
+        <Route path="checkbox" element={<Checkbox />} />
+        <Route path="radio" element={<RadioButton_and_Dropdown />} />
+        <Route path="mapFunction" element={<MapFunction />} />
       </Route>
     )
   );

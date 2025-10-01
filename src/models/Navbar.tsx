@@ -6,6 +6,7 @@ interface Props {
   home: string;
   about: string;
   buttons: string;
+  normalFunction: string;
 }
 
 function Navbar(props: Props) {
@@ -40,16 +41,16 @@ function Navbar(props: Props) {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to=""
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Dropdown
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/union">
@@ -59,6 +60,31 @@ function Navbar(props: Props) {
                   <li>
                     <Link className="dropdown-item" to="/button">
                       {props.buttons}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/normalFunction">
+                      {props.normalFunction}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/inputField">
+                      Input Field
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/checkbox">
+                      Check Box
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/radio">
+                      Radio Button and Dropdown
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/mapFunction">
+                      Map Function (Loop)
                     </Link>
                   </li>
                   <li>
