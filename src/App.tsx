@@ -11,6 +11,7 @@ import InputField from "./models/InputField";
 import Checkbox from "./models/Checkbox";
 import RadioButton_and_Dropdown from "./models/RadioButton_and_Dropdown";
 import MapFunction from "./models/MapFunction";
+import UseRef from "./models/UseRef";
 
 function App() {
   const router = createBrowserRouter(
@@ -25,6 +26,7 @@ function App() {
         <Route path="checkbox" element={<Checkbox />} />
         <Route path="radio" element={<RadioButton_and_Dropdown />} />
         <Route path="mapFunction" element={<MapFunction />} />
+        <Route path="useRef" element={<UseRef />} />
       </Route>
     )
   );

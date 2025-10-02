@@ -97,15 +97,24 @@ function Navbar(props: Props) {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="#"
-                  tabIndex={-1}
-                  aria-disabled="true"
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to=""
+                  id="navbarHooks"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  Disabled
-                </a>
+                  Hooks
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/useRef">
+                      UserRef
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
             <form className="d-flex">
