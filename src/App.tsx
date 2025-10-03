@@ -15,6 +15,7 @@ import UseRef from "./models/UseRef";
 import UseMemo from "./models/UseMemo";
 import ParentForwardRef from "./models/ForwardRef";
 import UseContext from "./models/UseContext";
+import UpdatingObjectsInState from "./models/UpdatingObjectsInState";
 
 function App() {
   const router = createBrowserRouter(
@@ -33,6 +34,7 @@ function App() {
         <Route path="useContext" element={<UseContext />} />
         <Route path="useMemo" element={<UseMemo />} />
         <Route path="forwardRef" element={<ParentForwardRef />} />
+        <Route path="objectUpdate" element={<UpdatingObjectsInState />} />
       </Route>
     )
   );
