@@ -5,7 +5,7 @@ function UseMemo() {
   return (
     <>
       <div className="heading-div">
-        <h1 className="heading">UseMemo</h1>
+        <h1 className="heading">Use Memo</h1>
       </div>
       <Card style={{ width: "20rem", padding: "10px", margin: "10px" }}>
         <p>1. Optimizing Expensive Calculations</p>

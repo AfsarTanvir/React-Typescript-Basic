@@ -88,11 +88,6 @@ function Navbar(props: Props) {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/objectUpdate">
-                      Updating Objects in State
-                    </Link>
-                  </li>
-                  <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
@@ -115,23 +110,33 @@ function Navbar(props: Props) {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/useRef">
+                    <Link className="dropdown-item" to="hooks/useRef">
                       User Ref
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/useMemo">
+                    <Link className="dropdown-item" to="hooks/useMemo">
                       User Memo
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/useContext">
+                    <Link className="dropdown-item" to="hooks/useContext">
                       Use Context
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/forwardRef">
+                    <Link className="dropdown-item" to="hooks/useAction">
+                      Use Action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="hooks/forwardRef">
                       Forward Ref
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="hooks/objectUpdate">
+                      Updating Objects in State
                     </Link>
                   </li>
                 </ul>

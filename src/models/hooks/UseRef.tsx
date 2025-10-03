@@ -4,7 +4,7 @@ function UseRef() {
   return (
     <>
       <div className="heading-div">
-        <h1 className="heading">UseRef</h1>
+        <h1 className="heading">Use Ref</h1>
       </div>
       <div>
         <p>1. Accessing the DOM using useRef hook.</p>

@@ -5,7 +5,9 @@
 }
 
 button {
-  background-color: rgb(3, 102, 20);
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(98, 224, 119);
 }
 
 .heading {
@@ -21,4 +23,15 @@ button {
   display: flex;
   justify-content: center;
   background-color: burlywood;
+}
+
+.cardforuniverse{
+  width: 20rem;
+  padding: 20px;
+  margin: 20px;
+}
+
+input{
+  margin: 10px;
+  padding: 10px;
 }
