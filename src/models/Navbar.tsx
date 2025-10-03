@@ -111,7 +111,22 @@ function Navbar(props: Props) {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/useRef">
-                      UserRef
+                      User Ref
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/useMemo">
+                      User Memo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/useContext">
+                      Use Context
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/forwardRef">
+                      Forward Ref
                     </Link>
                   </li>
                 </ul>

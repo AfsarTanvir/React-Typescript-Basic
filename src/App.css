@@ -11,9 +11,9 @@ button {
 .heading {
   border-radius: 30%;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
-  width: 200px;
+  width: relative;
   background-color: aquamarine;
 }
 

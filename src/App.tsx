@@ -12,6 +12,9 @@ import Checkbox from "./models/Checkbox";
 import RadioButton_and_Dropdown from "./models/RadioButton_and_Dropdown";
 import MapFunction from "./models/MapFunction";
 import UseRef from "./models/UseRef";
+import UseMemo from "./models/UseMemo";
+import ParentForwardRef from "./models/ForwardRef";
+import UseContext from "./models/UseContext";
 
 function App() {
   const router = createBrowserRouter(
@@ -27,6 +30,9 @@ function App() {
         <Route path="radio" element={<RadioButton_and_Dropdown />} />
         <Route path="mapFunction" element={<MapFunction />} />
         <Route path="useRef" element={<UseRef />} />
+        <Route path="useContext" element={<UseContext />} />
+        <Route path="useMemo" element={<UseMemo />} />
+        <Route path="forwardRef" element={<ParentForwardRef />} />
       </Route>
     )
   );
