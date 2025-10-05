@@ -88,6 +88,11 @@ function Navbar(props: Props) {
                     </Link>
                   </li>
                   <li>
+                    <Link className="dropdown-item" to="/nestedRoute">
+                      Nested Route
+                    </Link>
+                  </li>
+                  <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>

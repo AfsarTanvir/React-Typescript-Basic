@@ -19,12 +19,14 @@ import UpdatingObjectsInState from "./models/hooks/UpdatingObjectsInState";
 import UseAction from "./models/hooks/UseAction";
 import Error404 from "./Error404";
 import Hooks from "./models/Hooks";
+import { UserDetails, Users } from "./models/Users";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route path="" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="button" element={<Button />} />
         <Route path="union" element={<Unions />} />
@@ -40,7 +42,15 @@ function App() {
           <Route path="forwardRef" element={<ParentForwardRef />} />
           <Route path="objectUpdate" element={<UpdatingObjectsInState />} />
           <Route path="useAction" element={<UseAction />} />
-          <Route path="*" element={<Error404 title={"Second"} />} />
+          <Route
+            path="*"
+            element={<Error404 title={"Could Not Find This Hook Type."} />}
+          />
+        </Route>
+
+        <Route path="nestedRoute" element={<Users />}>
+          {/* outlet */}
+          <Route path=":userId" element={<UserDetails />} />
         </Route>
 
         {/* <Route path="*" element={<Error404 title={"First"} />} /> */}
