@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Navigate, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Button from "./models/Buttons";
 import About from "./models/About";
@@ -17,6 +17,8 @@ import ParentForwardRef from "./models/hooks/ForwardRef";
 import UseContext from "./models/hooks/UseContext";
 import UpdatingObjectsInState from "./models/hooks/UpdatingObjectsInState";
 import UseAction from "./models/hooks/UseAction";
+import Error404 from "./Error404";
+import Hooks from "./models/Hooks";
 
 function App() {
   const router = createBrowserRouter(
@@ -31,18 +33,22 @@ function App() {
         <Route path="checkbox" element={<Checkbox />} />
         <Route path="radio" element={<RadioButton_and_Dropdown />} />
         <Route path="mapFunction" element={<MapFunction />} />
-        <Route path="hooks/useRef" element={<UseRef />} />
-        <Route path="hooks/useContext" element={<UseContext />} />
-        <Route path="hooks/useMemo" element={<UseMemo />} />
-        <Route path="hooks/forwardRef" element={<ParentForwardRef />} />
-        <Route path="hooks/objectUpdate" element={<UpdatingObjectsInState />} />
-        <Route path="hooks/useAction" element={<UseAction />} />
+        <Route path="hooks" element={<Hooks />}>
+          <Route path="useRef" element={<UseRef />} />
+          <Route path="useContext" element={<UseContext />} />
+          <Route path="useMemo" element={<UseMemo />} />
+          <Route path="forwardRef" element={<ParentForwardRef />} />
+          <Route path="objectUpdate" element={<UpdatingObjectsInState />} />
+          <Route path="useAction" element={<UseAction />} />
+          <Route path="*" element={<Error404 title={"Second"} />} />
+        </Route>
+
+        {/* <Route path="*" element={<Error404 title={"First"} />} /> */}
+        <Route path="/*" element={<Navigate to={"/"} />} />
       </Route>
     )
   );
-  return(
-    <RouterProvider router={router}/>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App;
